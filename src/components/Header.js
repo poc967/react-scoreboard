@@ -1,14 +1,16 @@
 import React from 'react'
 import Stats from './Stats'
+import Stopwatch from './Stopwatch'
 
 const Header = (props) => {
     return (
         <header>
             <Stats
                 totalScore={props.totalScore}
+                totalPlayers={props.totalPlayers}
             />
             <h1>{props.title}</h1>
-            {/* <span className="stats">Players: {props.totalPlayers}</span> */}
+            <Stopwatch />
         </header>
     );
 }
